@@ -1,0 +1,121 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400&subset=latin,latin-ext);
+
+html, body {
+  	font-family: 'Roboto Condensed', sans-serif;
+  	font-style: normal;
+  	font-weight: 250;
+}
+
+.logo {
+	display: block;
+	width: 225px;
+	margin: 0 auto;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+    .abs-center-x {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.navbar-dark .navbar-nav .nav-link {
+	display: inline-block;
+	vertical-align: middle;
+	color: black;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	position: relative;
+	overflow: hidden;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+	color: rgba(34, 139, 34, .7);
+}
+
+.navbar-dark .navbar-nav .nav-link:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	left: 51%;
+	right: 51%;
+	bottom: 0;
+	background: rgba(144, 238, 144, .7);;
+	height: 4px;
+	-webkit-transition-property: left, right;
+	transition-property: left, right;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover:before,  
+.navbar-dark .navbar-nav .nav-link:active:before {
+	left: 0;
+	right: 0;
+}
+
+.navbar-decorations {
+	border-bottom: 1px solid rgba(169, 169, 169, .2);
+	border-top: 1px solid rgba(169, 169, 169, .2);
+}
+
+#carouselTest {
+	padding-top: 25px;
+	padding-bottom: 45px;
+	margin: 0px auto;
+}
+
+#templateTest {
+	margin-bottom: 50px;
+	filter: blur(8px);
+	-webkit-filter: blur(2px);
+	height: 100%;
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#btnTest {
+	width: 190px;
+	height: 62px;
+}
+
+/* [ ~ ScrollBar ~ ] */
+::-webkit-scrollbar-track { background-color: rgba(0, 0, 0, 0.1) }
+::-webkit-scrollbar-thumb:hover { background-color: #808080; }
+::-webkit-scrollbar-corner { background-repeat: no-repeat; }
+
+::-webkit-scrollbar-button 
+{
+  background-image: url(''); 
+  background-repeat: no-repeat;
+  width: 0px;
+  height: 0px
+}
+
+::-webkit-scrollbar-thumb 
+{
+  -webkit-border-radius: 0px;
+  background-color: #808080;
+}
+
+::-webkit-resizer 
+{
+  background-image: url('');
+  background-repeat: no-repeat;
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar 
+{
+  width: 6px;
+  height: 6px;
+}
